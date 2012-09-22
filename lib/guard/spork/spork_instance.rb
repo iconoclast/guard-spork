@@ -26,7 +26,7 @@ module Guard
 			end
 
 			def start
-				cmd = [command]
+				cmd = command
 
 				if self.class.windows?
 					cmd = ["cmd", "/C"] + cmd
